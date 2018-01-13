@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- AOSP-JDC -->
-  <project path="build/make" name="AOSP-JF-MM/platform_build" groups="pdk" remote="github" revision="aosp-8.0-test" >
+  <project path="build/make" name="sirmordred/platform_build" groups="pdk" remote="github" revision="aosp-8.0-test" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -55,8 +55,13 @@
   <project path="packages/services/Telephony" name="AOSP-JF-MM/platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-8.0-test" />
 
   <!-- Vendor repos -->
-  <project path="vendor/aosp" name="AOSP-JF-MM/platform_vendor_aosp" remote="github" revision="aosp-8.0-test" />
+  <project path="vendor/aosp" name="sirmordred/platform_vendor_aosp" remote="github" revision="aosp-8.0-test" />
   <project path="vendor/qcom-opensource/cryptfs_hw" name="AOSP-JF-MM/platform_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="aosp-8.0-test" />
   <project path="vendor/qcom-opensource/interfaces" name="AOSP-JF-MM/platform_vendor_qcom_opensource_interfaces" remote="github" revision="aosp-8.0-test" />
+
+  <!-- Device repos -->
+  <project path="device/xiaomi/gemini" name="sirmordred/gemini_device" remote="github" revision="experimental" />
+  <project path="vendor/xiaomi/gemini" name="sirmordred/gemini_vendor" remote="github" revision="master" />
+  <project path="kernel/xiaomi/msm8996" name="sirmordred/gemini_kernel" remote="github" revision="lineage-15.0" />
 
 </manifest>
